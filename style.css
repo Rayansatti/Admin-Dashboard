@@ -1,3 +1,117 @@
 h1 {
     background-color: green;
 }
+.container {
+    overflow: auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 2fr 2fr;
+    gap: 5px;
+}
+.header {
+    overflow: auto;
+    background-color: rgb(181, 203, 231);
+    border-color: blueviolet;
+    border-style: solid;
+    border-radius: 10px;
+    grid-column: 2 / 4;
+    grid-row: 1 ;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px 5px 10px 5px;
+}
+
+.search {
+    grid-column: 1 / 2;
+    padding: 10px;
+}
+.search > input {
+    background-color: beige;
+    border-radius: 30px;
+    border-color: beige;
+    min-width: 250px;
+    padding-left: 5px;
+}
+.notification {
+    grid-column: 2 / 3;
+    display: flex;
+    
+}
+
+.icon {
+    grid-column: 1 ;
+    padding-left: 10px;
+    margin-top: 0;
+    display: flex;
+    
+}
+ .icon > img {
+    padding: 0;
+    border-radius: 50%;
+    justify-content: start;
+    align-self: center;
+    margin-right: 15px;
+
+ }
+
+ .icon > p {
+    grid-column: 2 / 3;
+    margin-top: 0;
+    justify-content: end;
+ }
+
+ .options {
+    grid-column: 2 / 3;
+    align-self: center;
+    padding-left: 10%;
+ }
+ .notification > img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+ }
+
+.sidebar {
+    background-color: rgb(252, 252, 252);
+    border-color: blueviolet;
+    border-style: solid;
+    border-radius: 10px;
+    grid-column: 1;
+    grid-row: 1 / 4;
+    padding: 10px;
+    gap: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    font-weight: bold;
+}
+
+.projects {
+    background-color: blueviolet;
+    grid-column: 2 / 4;
+    grid-row: 2 / 4;
+}
+ 
+ul {
+    list-style-type: none;
+    
+}
+ a {
+    text-decoration: none;
+    color: rgb(2, 7, 78);
+ }
+ 
+.sidebar-header {
+    padding-left: 15px;
+}
+
+ img {
+    padding-right: 15px;
+}
+button {
+    background-color: rgb(16, 124, 212);
+    border-radius: 30px;
+    padding: 5px 15px 5px 15px;
+    margin-left: 10px;
+    margin-top: 5px;
+    border:none ;
+}
